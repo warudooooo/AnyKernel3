@@ -4,16 +4,17 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=
-kernel.compiler=
-kernel.made=
+kernel.string=Andromeda IX
+kernel.compiler=Proton clang
+kernel.made=warudo
 message.word=
 do.devicecheck=1
 do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=
+device.name1=spes
+device.name2=spesn
 supported.versions=
 supported.patchlevels=
 supported.vendorpatchlevels=
@@ -28,7 +29,7 @@ set_perm_recursive 0 0 750 750 $ramdisk/init* $ramdisk/sbin;
 } # end attributes
 
 # boot shell variables
-block=;
+block=boot;
 is_slot_device=auto;
 ramdisk_compression=auto;
 patch_vbmeta_flag=auto;
